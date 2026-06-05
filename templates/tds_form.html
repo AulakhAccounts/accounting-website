@@ -1,0 +1,220 @@
+{% extends 'base.html' %}
+ 
+{% block content %}
+ 
+<div class="container">
+ 
+    <div class="row justify-content-center">
+ 
+        <div class="col-md-8">
+ 
+            <div class="card shadow p-4">
+ 
+                <h1 class="text-center mb-3">
+                    TDS Filing Service
+                </h1>
+ 
+                <p class="text-center text-muted mb-4">
+ 
+                    Please fill all details carefully and upload
+                    the required documents below.
+ 
+                </p>
+ 
+ 
+                <!-- Required Documents -->
+ 
+                <div class="alert alert-dark">
+ 
+                    <h5>
+                        Required Documents:
+                    </h5>
+ 
+                    <ul class="mb-0">
+ 
+                        <li>PAN Card</li>
+ 
+                        <li>TDS Details</li>
+ 
+                        <li>Salary Sheet</li>
+ 
+                        
+ 
+                    </ul>
+ 
+                </div>
+ 
+ 
+                <form method="POST"
+                      enctype="multipart/form-data">
+ 
+                    {% csrf_token %}
+ 
+                    {% for field in form %}
+ 
+    <div class="mb-3">
+ 
+        <label class="form-label">
+ 
+            {{ field.label }}
+ 
+        </label>
+ 
+        {{ field }}
+ 
+        {% if field.errors %}
+ 
+            <div class="text-danger mt-1">
+ 
+                {{ field.errors.0 }}
+ 
+            </div>
+ 
+        {% endif %}
+ 
+    </div>
+    {% endfor %}
+    <div class="mb-4">
+ 
+    <label class="form-label">
+ 
+        Upload Additional Documents (Optional)
+ 
+    </label>
+ 
+    <input type="file"
+           name="other_documents"
+           class="form-control"
+           multiple>
+ 
+</div>
+ 
+
+ 
+                    <button type="submit"
+                            class="btn btn-dark w-100 mt-3">
+ 
+                        Submit TDS Request
+ 
+                    </button>
+ 
+                </form>
+ 
+            </div>
+ 
+        </div>
+ 
+    </div>
+ 
+</div>
+
+<script>
+ 
+document.addEventListener("DOMContentLoaded", function () {
+ 
+    const phoneField =
+        document.getElementById("id_phone");
+ 
+    const emailField =
+        document.getElementById("id_email");
+ 
+    const form =
+        document.querySelector("form");
+ 
+ 
+    // CREATE ERROR ELEMENTS
+ 
+    const phoneError =
+        document.createElement("div");
+ 
+    phoneError.style.color = "red";
+ 
+    phoneError.style.marginTop = "5px";
+ 
+    phoneField.parentNode.appendChild(phoneError);
+ 
+ 
+    const emailError =
+        document.createElement("div");
+ 
+    emailError.style.color = "red";
+ 
+    emailError.style.marginTop = "5px";
+ 
+    emailField.parentNode.appendChild(emailError);
+ 
+ 
+    // PHONE VALIDATION
+ 
+    phoneField.addEventListener("input", function () {
+ 
+        const phone = phoneField.value;
+ 
+        if (!/^[0-9]*$/.test(phone)) {
+ 
+            phoneError.innerText =
+                "Phone number must contain only digits.";
+ 
+        }
+ 
+        else if (phone.length > 0 &&
+                 phone.length !== 10) {
+ 
+            phoneError.innerText =
+                "Phone number must be exactly 10 digits.";
+ 
+        }
+ 
+        else {
+ 
+            phoneError.innerText = "";
+ 
+        }
+ 
+    });
+ 
+ 
+    // EMAIL VALIDATION
+ 
+    emailField.addEventListener("input", function () {
+ 
+        const email = emailField.value;
+ 
+        const emailPattern =
+            /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+ 
+        if (email.length > 0 &&
+            !emailPattern.test(email)) {
+ 
+            emailError.innerText =
+                "Enter a valid email address.";
+ 
+        }
+ 
+        else {
+ 
+            emailError.innerText = "";
+ 
+        }
+ 
+    });
+ 
+ 
+    // BLOCK INVALID SUBMIT
+ 
+    form.addEventListener("submit", function (event) {
+ 
+        if (phoneError.innerText ||
+            emailError.innerText) {
+ 
+            event.preventDefault();
+ 
+        }
+ 
+    });
+ 
+});
+ 
+</script>
+
+{% endblock %}

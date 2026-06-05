@@ -1,0 +1,727 @@
+body {
+ 
+    background-color: #f5f7fa;
+ 
+    font-family: Arial, sans-serif;
+}
+ 
+ 
+/* NAVBAR */
+ 
+.navbar {
+ 
+    background-color: #0f172a !important;
+ 
+    padding: 15px 0;
+}
+ 
+.navbar-brand {
+ 
+    font-size: 24px;
+ 
+    font-weight: bold;
+ 
+    color: white !important;
+}
+ 
+.nav-link {
+ 
+    color: white !important;
+ 
+    margin-left: 15px;
+ 
+    transition: 0.3s;
+}
+ 
+.nav-link:hover {
+ 
+    color: #facc15 !important;
+}
+ 
+ 
+/* HERO SECTION */
+ 
+.hero-section {
+ 
+    background: linear-gradient(
+        rgba(15,23,42,0.8),
+        rgba(15,23,42,0.8)
+    ),
+ 
+    url("../images/accounting.jpg");
+ 
+    background-size: cover;
+ 
+    background-position: center;
+ 
+    color: white;
+ 
+    padding: 120px 20px;
+ 
+    border-radius: 20px;
+ 
+    text-align: center;
+}
+ 
+.hero-section h1 {
+ 
+    font-size: 50px;
+ 
+    font-weight: bold;
+}
+ 
+.hero-section p {
+ 
+    font-size: 20px;
+ 
+    margin-top: 20px;
+}
+ 
+ 
+/* BUTTONS */
+ 
+.btn-dark {
+ 
+    background-color: #0f172a;
+ 
+    border: none;
+ 
+    padding: 10px 20px;
+ 
+    border-radius: 10px;
+}
+ 
+.btn-dark:hover {
+ 
+    background-color: #1e293b;
+}
+ 
+ 
+/* CARDS */
+ 
+.card {
+ 
+    border: none;
+ 
+    border-radius: 20px;
+ 
+    transition: 0.3s;
+ 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+ 
+.card:hover {
+ 
+    transform: translateY(-5px);
+}
+ 
+ 
+/* FORMS */
+ 
+form input,
+form textarea,
+form select {
+ 
+    border-radius: 10px !important;
+ 
+    padding: 10px !important;
+}
+ 
+ 
+/* FOOTER */
+ 
+footer {
+ 
+    background-color: #0f172a;
+ 
+    color: white;
+ 
+    padding: 30px 0;
+ 
+    margin-top: 80px;
+}
+
+/* DROPDOWN */
+ 
+.dropdown-menu {
+ 
+    border-radius: 15px;
+ 
+    border: none;
+ 
+    padding: 10px;
+ 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+ 
+.dropdown-item {
+ 
+    border-radius: 10px;
+ 
+    padding: 10px;
+ 
+    transition: 0.3s;
+}
+ 
+.dropdown-item:hover {
+ 
+    background-color: #0f172a;
+ 
+    color: white;
+}
+
+/* FOOTER LINKS */
+ 
+.footer-link {
+ 
+    color: white;
+ 
+    text-decoration: none;
+ 
+    transition: 0.3s;
+}
+ 
+.footer-link:hover {
+ 
+    color: #facc15;
+}
+ 
+ 
+/* SECTION SPACING */
+ 
+section {
+ 
+    margin-top: 80px;
+}
+ 
+ 
+/* SERVICE IMAGES */
+ 
+.card img {
+ 
+    height: 220px;
+ 
+    object-fit: cover;
+ 
+    border-radius: 15px;
+}
+ 
+ 
+/* BUTTONS */
+ 
+.btn {
+ 
+    border-radius: 10px;
+ 
+    padding: 10px 20px;
+ 
+    font-weight: 600;
+}
+ 
+ 
+/* FORM CARDS */
+ 
+.card {
+ 
+    overflow: hidden;
+}
+
+/* PREMIUM CARD EFFECT */
+ 
+.card:hover {
+ 
+    transform: translateY(-8px);
+ 
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+form input,
+form textarea,
+form select {
+ 
+    border: 1px solid #d1d5db !important;
+ 
+    transition: 0.3s;
+}
+ 
+form input:focus,
+form textarea:focus,
+form select:focus {
+ 
+    border-color: #0f172a !important;
+ 
+    box-shadow: 0 0 10px rgba(15,23,42,0.2) !important;
+}
+
+/* MOBILE RESPONSIVE */
+ 
+@media (max-width: 768px) {
+ 
+    .hero-section {
+ 
+        padding: 80px 20px;
+    }
+ 
+    .hero-section h1 {
+ 
+        font-size: 34px;
+    }
+ 
+    .hero-section p {
+ 
+        font-size: 16px;
+    }
+ 
+    .navbar-brand {
+ 
+        font-size: 20px;
+    }
+ 
+    .card img {
+ 
+        height: 180px;
+    }
+ 
+    footer {
+ 
+        text-align: center;
+    }
+}
+ 
+/* SERVICE CARD */
+ 
+.card {
+ 
+    height: 100%;
+}
+ 
+.card h3 {
+ 
+    font-weight: bold;
+ 
+    margin-top: 10px;
+}
+ 
+.card ul {
+ 
+    padding-left: 20px;
+}
+ 
+.card ul li {
+ 
+    margin-bottom: 8px;
+}
+ 
+html {
+ 
+    scroll-behavior: smooth;
+}
+ 
+/* ABOUT PAGE */
+ 
+.about-section img {
+ 
+    border-radius: 20px;
+}
+/* CONTACT PAGE */
+ 
+iframe {
+ 
+    width: 100%;
+ 
+    border-radius: 15px;
+}
+/* TESTIMONIALS */
+ 
+.card p {
+ 
+    color: #4b5563;
+}
+ 
+ 
+/* STATS SECTION */
+ 
+.card h1 {
+ 
+    color: #0f172a;
+ 
+    font-weight: bold;
+}
+
+/* * =========================
+   HOMEPAGE SERVICE CARDS
+========================= */ */
+ 
+.home-service-title {
+ 
+    font-size: 42px;
+ 
+    font-weight:bold;
+ 
+    color: #0f172a;
+}
+ 
+.home-service-subtitle {
+ 
+    color: #64748b;
+ 
+    margin-top: 10px;
+}
+ 
+ 
+.home-service-card {
+ 
+    background: white;
+ 
+    border-radius: 20px;
+ 
+    overflow: hidden;
+ 
+    transition: 0.4s;
+ 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+ 
+    height: 100%;
+}
+ 
+.home-service-card:hover {
+ 
+    transform: translateY(-10px);
+ 
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+ 
+ 
+.home-service-image {
+ 
+    width: 100%;
+ 
+    height: 220px;
+ 
+    object-fit: cover;
+}
+ 
+ 
+.home-service-content {
+ 
+    padding: 25px;
+}
+ 
+ 
+.home-service-icon {
+ 
+    font-size: 38px;
+ 
+    margin-bottom: 15px;
+}
+ 
+ 
+.home-service-content h4 {
+ 
+    font-weight: bold;
+ 
+    margin-bottom: 15px;
+ 
+    color: #0f172a;
+}
+ 
+ 
+.home-service-content p {
+ 
+    color: #64748b;
+ 
+    min-height: 70px;
+}
+ 
+ 
+.home-service-content .btn {
+ 
+    border-radius: 10px;
+ 
+    font-weight: 600;
+ 
+    padding: 10px 18px;
+}
+
+/* =========================
+   WHY CHOOSE US SECTION
+========================= */
+ 
+.why-section {
+ 
+    background: linear-gradient(
+        to bottom,
+        #f8fafc,
+        #eef2ff
+    );
+ 
+    border-radius: 30px;
+ 
+    margin-top: 60px;
+ 
+    padding: 70px 20px;
+}
+ 
+ 
+.section-title {
+ 
+    font-size: 40px;
+ 
+    font-weight: bold;
+ 
+    color: #0f172a;
+}
+ 
+ 
+.section-subtitle {
+ 
+    color: #64748b;
+ 
+    margin-top: 10px;
+}
+ 
+ 
+.why-card {
+ 
+    background: white;
+ 
+    border-radius: 25px;
+ 
+    padding: 40px 30px;
+ 
+    text-align: center;
+ 
+    transition: 0.4s;
+ 
+    height: 100%;
+ 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+ 
+ 
+.why-card:hover {
+ 
+    transform: translateY(-10px);
+ 
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+ 
+ 
+.why-icon {
+ 
+    width: 90px;
+ 
+    height: 90px;
+ 
+    margin: auto;
+ 
+    margin-bottom: 25px;
+ 
+    border-radius: 50%;
+ 
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #1e3a8a
+    );
+ 
+    display: flex;
+ 
+    align-items: center;
+ 
+    justify-content: center;
+ 
+    color: white;
+ 
+    font-size: 35px;
+}
+ 
+ 
+.why-card h4 {
+ 
+    font-weight: bold;
+ 
+    margin-bottom: 15px;
+ 
+    color: #0f172a;
+}
+ 
+ 
+.why-card p {
+ 
+    color: #64748b;
+ 
+    line-height: 1.7;
+}
+
+/* =========================
+   TESTIMONIAL SECTION
+========================= */
+ 
+.testimonial-section {
+ 
+    margin-top: 80px;
+}
+ 
+ 
+.testimonial-card {
+ 
+    background: white;
+ 
+    padding: 35px;
+ 
+    border-radius: 25px;
+ 
+    height: 100%;
+ 
+    transition: 0.4s;
+ 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+ 
+ 
+.testimonial-card:hover {
+ 
+    transform: translateY(-10px);
+ 
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+ 
+ 
+.quote-icon {
+ 
+    font-size: 35px;
+ 
+    color: #f59e0b;
+ 
+    margin-bottom: 20px;
+}
+ 
+ 
+.testimonial-card p {
+ 
+    color: #475569;
+ 
+    line-height: 1.8;
+ 
+    margin-bottom: 30px;
+}
+ 
+ 
+.testimonial-user {
+ 
+    display: flex;
+ 
+    align-items: center;
+ 
+    gap: 15px;
+}
+ 
+ 
+.user-icon {
+ 
+    width: 60px;
+ 
+    height: 60px;
+ 
+    border-radius: 50%;
+ 
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #1e3a8a
+    );
+ 
+    display: flex;
+ 
+    align-items: center;
+ 
+    justify-content: center;
+ 
+    color: white;
+ 
+    font-size: 22px;
+}
+ 
+ 
+.testimonial-user h5 {
+ 
+    margin-bottom: 2px;
+ 
+    font-weight: bold;
+}
+ 
+ 
+.testimonial-user span {
+ 
+    color: #64748b;
+ 
+    font-size: 14px;
+}
+ 
+/* =========================
+   STATS SECTION
+========================= */
+ 
+.stats-section {
+ 
+    margin-top: 80px;
+}
+ 
+ 
+.stats-card {
+ 
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #1e3a8a
+    );
+ 
+    color: white;
+ 
+    border-radius: 25px;
+ 
+    padding: 40px 20px;
+ 
+    text-align: center;
+ 
+    transition: 0.4s;
+ 
+    height: 100%;
+ 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+ 
+ 
+.stats-card:hover {
+ 
+    transform: translateY(-10px);
+}
+ 
+ 
+.stats-icon {
+ 
+    font-size: 40px;
+ 
+    margin-bottom: 20px;
+ 
+    color: #fbbf24;
+}
+ 
+ 
+.stats-card h2 {
+ 
+    font-size: 42px;
+ 
+    font-weight: bold;
+ 
+    margin-bottom: 10px;
+}
+ 
+ 
+.stats-card p {
+ 
+    margin: 0;
+ 
+    color: #e2e8f0;
+}
+ 
