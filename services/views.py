@@ -189,65 +189,65 @@ def handle_form(request, form_class, template_name):
  
             # EMAIL TO ADMIN
  
-#             send_mail(
+            send_mail(
  
-#                 subject='New Service Request',
+                subject='New Service Request',
  
-#                 message=f'''
-# New request submitted.
+                message=f'''
+New request submitted.
  
-# Name: {saved_request.full_name}
+Name: {saved_request.full_name}
  
-# Email: {saved_request.email}
+Email: {saved_request.email}
  
-# Phone: {saved_request.phone}
-# ''',
+Phone: {saved_request.phone}
+''',
  
-#                 from_email=settings.EMAIL_HOST_USER,
+                from_email=settings.EMAIL_HOST_USER,
  
-#                 recipient_list=[
-#                     'rk.aulakhacc96@gmail.com'
-#                 ],
+                recipient_list=[
+                    'rk.aulakhacc96@gmail.com'
+                ],
  
-#                 fail_silently=False,
-#             )
+                fail_silently=False,
+            )
  
-#             # EMAIL TO USER
+            # EMAIL TO USER
  
-#             send_mail(
+            send_mail(
  
-#                 subject='Your Service Request Has Been Submitted',
+                subject='Your Service Request Has Been Submitted',
  
-#                 message=f'''
-# Hello {saved_request.full_name},
+                message=f'''
+Hello {saved_request.full_name},
  
-# Your request has been submitted successfully.
+Your request has been submitted successfully.
  
-# Please contact on WhatsApp to complete payment and verification process.
+Please contact on WhatsApp to complete payment and verification process.
  
-# Thank you.
-# ''',
+Thank you.
+''',
  
-#                 from_email=settings.EMAIL_HOST_USER,
+                from_email=settings.EMAIL_HOST_USER,
  
-#                 recipient_list=[
-#                     saved_request.email
-#                 ],
+                recipient_list=[
+                    saved_request.email
+                ],
  
-#                 fail_silently=False,
-#             )
+                fail_silently=False,
+            )
  
-#             return redirect('success')
+            return redirect('success')
  
-#     else:
+    else:
  
-#         form = form_class()
+        form = form_class()
  
-#     return render(
-#         request,
-#         template_name,
-#         {'form': form}
-#     )
+    return render(
+        request,
+        template_name,
+        {'form': form}
+    )
  
  
 # =========================
